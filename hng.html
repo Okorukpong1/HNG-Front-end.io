@@ -6,33 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first hng project</title>
     <link rel="stylesheet" href="hng.css">
-</head>
-<body>
-    <div class="box fixed">
-    <main>
-        <!-- my name -->
-        <h2 data-testid="slackUserName">Daniel Adetunji</h2>
-
-        <!-- my picture -->
-        <img src="../hng projects/Dan.JPG" alt="Daniel Adetunji" width="200" data-testid="slackDisplayImage">
-
-        <!-- To display the current day of the week -->
-        <p id="dayOfWeek" data-testid="current-day"></p>
-
-        <!-- Display the utc time -->
-        <p id="utcTime" data-testid="currentUTCTime"></p>
-
-        <!-- track and github url-->
-        <p data-testid="myTrack">Track: Front-end</p>
-        <p data-testid="githubURL">Github URL: <a href="https://github.com/Okorukpong1/HNG-Front-end.git" data-testid="githubURL">https://github.com/Okorukpong1/HNG-Front-end.git</a></p>
-        
-    </main>
-
-    <footer data-testid="page-footer">
-        <p>&copy; 2023 HNGx</p>
-    </footer>
-    </div>
-
     <script>
         // JavaScript code to display the current day of the week
         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -44,5 +17,32 @@
         const utcTime = currentDate.toISOString().substr(11, 8);
         document.getElementById("utcTime").textContent = "Current UTC Time " + utcTime
     </script>
+
+</head>
+<body>
+    <div class="box fixed">
+    <main>
+        <!-- my name -->
+        <h2 data-testid="slackUserName">Daniel Adetunji</h2>
+
+        <!-- my picture -->
+        <img src="Dan.JPG" alt="Daniel Adetunji" width="200" data-testid="slackDisplayImage">
+
+        <!-- To display the current day of the week -->
+        <p id="dayOfWeek" data-testid="current-day"></p>
+
+        <!-- Display the utc time -->
+        <p id="utcTime" data-testid="currentUTCTime"></p>
+
+        <!-- track and github url-->
+        <p data-testid="myTrack">Track: Front-end</p>
+        <p data-testid="githubURL">Github URL: <a href="https://github.com/Okorukpong1/HNG-Front-end.io.git" data-testid="githubURL">https://github.com/Okorukpong1/HNG-Front-end.io.git</a></p>
+        
+    </main>
+
+    <footer data-testid="page-footer">
+        <p>&copy; 2023 HNGx</p>
+    </footer>
+    </div>
 </body>
 </html>
