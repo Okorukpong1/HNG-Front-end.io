@@ -1,0 +1,54 @@
+/* margin and padding for the page */
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* the entire page horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightgoldenrodyellow;
+    font-size: 1.5rem;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Center my image */
+#profile-picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling my footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* some spacing for reading */
+h2 {
+    padding: 10px;
+    background: #4f6c74
+}
+
+[data-testid="githubURL"] a {
+    text-decoration: none;
+}
+
+/* track, time, github */
+[data-testid="githubURL"] a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
